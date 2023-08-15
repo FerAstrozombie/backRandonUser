@@ -5,10 +5,7 @@ import randonUser from "./routes/randonUsers.routes.js";
 import cors from "cors";
 
 const app = express();
-
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors())
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
